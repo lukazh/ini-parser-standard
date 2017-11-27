@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>IniFileParserStandard</PackageId>
+    <Authors>Lukas Zhang</Authors>
+    <Company>Lukas Zhang</Company>
+    <Product>IniFileParserStandard</Product>
+    <Description>A .NET Standard library for reading/writing INI data from IO streams, file streams, and strings. 
+
+Also implements merging operations, both for complete ini files, sections, or even just a subset of the keys contained by the files.
+
+</Description>
+    <PackageProjectUrl>https://github.com/lukazh/ini-parser-standard</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/lukazh/ini-parser-standard/blob/master/LICENSE</PackageLicenseUrl>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+</Project>
