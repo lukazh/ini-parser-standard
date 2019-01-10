@@ -11,14 +11,14 @@ Install it with NuGet: https://www.nuget.org/packages/IniFileParserStandard/
 All code examples expect the following using clauses:
 
 ```csharp
-using IniParser;
-using IniParser.Model;
+using IniFileParser;
+using IniFileParser.Model;
 ```
 
 INI data is stored in nested dictionaries, so accessing the value associated to a key in a section is straightforward. Load the data using one of the provided methods.
 
 ```csharp
-var parser = new IniFileParser();
+var parser = new IniFileParser.IniFileParser();
 IniData data = parser.ReadFile("Configuration.ini");
 ```
 
@@ -68,6 +68,6 @@ comments are written before the element they refer to.
 To query, add or remove comments, access the property `Comments` available both in `SectionData` and `KeyData` models.
 
 ```csharp
-var listOfCommentsForSection = config.["user_settings"].Comments;
+var listOfCommentsForSection = config.Sections.GetSectionData("user_settings").Comments;
 var listOfCommentsForKey = config["user_settings"].GetKeyData("resolution").Comments;
 ```
